@@ -1,4 +1,3 @@
-# Use root/example as user/password credentials
 version: '3.1'
 
 services:
@@ -10,4 +9,12 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: VU5cwJ3LpWYtzRua7kbKCXM4BndxZsAgHPFe62DqvhSjm8EQNG
     ports:
-      - 27017:27017
+      - 273:27017
+  backbone:
+    image: node
+    restart: always
+    ports:
+      - 272:272
+    entrypoint: /app/docker/entrypoint.sh
+    environment:
+      - NODE_ENV=production
