@@ -4,6 +4,8 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import compression from "compression";
 import cors from "cors";
+import mongoose from 'mongoose';
+import router from './router';
 
 const app = express();
 
@@ -20,3 +22,11 @@ const server = http.createServer(app);
 server.listen(272, () => {
     console.log("Server listening on http://localhost:272/")
 })
+
+const MONGO_URL = 'mongodb://root:VU5cwJ3LpWYtzRua7kbKCXM4BndxZsAgHPFe62DqvhSjm8EQNG@localhost:27017/?authMechanism=DEFAULT'
+
+mongoose.Promise = Promise;
+mongoose.connect(MONGO_URL);
+mongoose.connection.on('error', (error: Error) => console.log(error));
+
+app.use('/', router())
