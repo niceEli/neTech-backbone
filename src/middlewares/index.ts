@@ -27,7 +27,7 @@ export const isAuthenticated = async (req: express.Request, res: express.Respons
     try {
         const sessionToken = req.cookies['neTechBackboneSessionID'];
 
-        if (!sessionToken) {
+        if(!sessionToken) {
             return res.sendStatus(403);
         }
 
