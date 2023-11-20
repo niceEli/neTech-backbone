@@ -23,8 +23,6 @@ server.listen(272, () => {
     console.log("Server listening on http://localhost:272/")
 })
 
-const env = new Env();
-
 const MONGO_URL = 'mongodb://root:VU5cwJ3LpWYtzRua7kbKCXM4BndxZsAgHPFe62DqvhSjm8EQNG@netech-backbone-mongo-1:27017/?authMechanism=DEFAULT'
 
 mongoose.Promise = Promise;
