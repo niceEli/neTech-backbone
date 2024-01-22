@@ -9,10 +9,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@humanwhocodes/env@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@humanwhocodes/env/-/env-3.0.1.tgz#ead638e9e02dc69b17a414830e1213a9fc4314ab"
-  integrity sha512-DWYLw6JEX4PaarTF+ehRGkydDO4N1Yz/scjFqv9Ps7ZY20J9BELSJSi5u4dNb3Zg8CmvhJkh2Ro6IZCLfza3UA==
+"@humanwhocodes/env@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@humanwhocodes/env/-/env-3.0.2.tgz#3bfee2a877fd1aa922cbbc1d89e1bad12f866300"
+  integrity sha512-javcHttnb+kJamJQZZoQ5+um1yx07/tHx56bJ81Dt+jpPR42u+xvDhWe6yDiz+wtBchfcg5vNqanxC9+Gjpnrg==
 
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.1.1"

@@ -19,7 +19,7 @@
     "@types/mongoose": "^5.11.97"
   },
   "dependencies": {
-    "@humanwhocodes/env": "^3.0.1",
+    "@humanwhocodes/env": "^3.0.2",
     "body-parser": "^1.20.2",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
